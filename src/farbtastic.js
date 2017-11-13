@@ -490,8 +490,10 @@ $._farbtastic = function (container, options) {
   };
 
   // Parse options.
-  if (!options.callback) {
-    options = { callback: options };
+  if(options){
+    if (!options.callback) {
+      options = { callback: options };
+    }
   }
   options = $.extend({
     width: 300,
