@@ -497,7 +497,7 @@ $._farbtastic = function (container, options) {
   }
   options = $.extend({
     width: 300,
-    wheelWidth: (options.width || 300) / 10,
+    wheelWidth: (if(!options.width){300}) / 10,
     callback: null
   }, options);
 
